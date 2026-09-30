@@ -1,0 +1,151 @@
+customer_id,customer_name,segment,region,industry,account_owner,contract_start,contract_end,status
+CUST001,Northstar Systems,Enterprise,West,Technology,Portfolio Owner 01,2023-02-01,2027-07-01,Active
+CUST002,Aster Ridge Technologies,Enterprise,Central,Healthcare,Portfolio Owner 02,2022-03-01,2028-08-01,Active
+CUST003,Cobalt Harbor Group,Enterprise,West,Financial Services,Portfolio Owner 03,2023-04-01,2026-09-01,Active
+CUST004,Juniper Peak Networks,Enterprise,East,Manufacturing,Portfolio Owner 04,2022-05-01,2027-10-01,Active
+CUST005,Meridian Forge Labs,Enterprise,Central,Business Services,Portfolio Owner 05,2023-06-01,2028-11-01,Active
+CUST006,Silverline Data Works,Enterprise,West,Technology,Portfolio Owner 06,2022-07-01,2026-12-01,Active
+CUST007,Arcfield Commerce,Enterprise,East,Healthcare,Portfolio Owner 07,2023-08-01,2027-01-01,Active
+CUST008,Brightpath Logistics,Enterprise,Central,Financial Services,Portfolio Owner 08,2022-09-01,2028-02-01,Active
+CUST009,Evercrest Health Tech,Enterprise,West,Manufacturing,Portfolio Owner 09,2023-10-01,2026-03-01,Active
+CUST010,Redwood Signal Partners,Enterprise,East,Business Services,Portfolio Owner 10,2022-11-01,2027-04-01,Active
+CUST011,Lattice Advisory 011,Enterprise,Central,Technology,Portfolio Owner 11,2023-12-01,2028-05-01,Active
+CUST012,Mosaic Advisory 012,Enterprise,West,Healthcare,Portfolio Owner 12,2022-01-01,2026-06-01,Active
+CUST013,Nova Advisory 013,Enterprise,East,Financial Services,Portfolio Owner 13,2023-02-01,2027-07-01,Active
+CUST014,Orchid Advisory 014,Enterprise,Central,Manufacturing,Portfolio Owner 14,2022-03-01,2028-08-01,Active
+CUST015,Pioneer Advisory 015,Enterprise,West,Business Services,Portfolio Owner 15,2023-04-01,2026-09-01,Active
+CUST016,Quartz Advisory 016,Enterprise,East,Technology,Portfolio Owner 16,2022-05-01,2027-10-01,Active
+CUST017,Rivet Advisory 017,Enterprise,Central,Healthcare,Portfolio Owner 17,2023-06-01,2028-11-01,Active
+CUST018,Summit Advisory 018,Enterprise,West,Financial Services,Portfolio Owner 18,2022-07-01,2026-12-01,Active
+CUST019,Tandem Advisory 019,Enterprise,East,Manufacturing,Portfolio Owner 01,2023-08-01,2027-01-01,Active
+CUST020,Vertex Advisory 020,Enterprise,Central,Business Services,Portfolio Owner 02,2022-09-01,2028-02-01,Active
+CUST021,Alto Cloud 021,Enterprise,West,Technology,Portfolio Owner 03,2023-10-01,2026-03-01,Active
+CUST022,Beacon Cloud 022,Enterprise,East,Healthcare,Portfolio Owner 04,2022-11-01,2027-04-01,Active
+CUST023,Cedar Cloud 023,Enterprise,Central,Financial Services,Portfolio Owner 05,2023-12-01,2028-05-01,Active
+CUST024,Delta Cloud 024,Enterprise,West,Manufacturing,Portfolio Owner 06,2022-01-01,2026-06-01,Active
+CUST025,Ember Cloud 025,Enterprise,East,Business Services,Portfolio Owner 07,2023-02-01,2027-07-01,Active
+CUST026,Foundry Cloud 026,Enterprise,Central,Technology,Portfolio Owner 08,2022-03-01,2028-08-01,Active
+CUST027,Granite Cloud 027,Enterprise,West,Healthcare,Portfolio Owner 09,2023-04-01,2026-09-01,Active
+CUST028,Helix Cloud 028,Enterprise,East,Financial Services,Portfolio Owner 10,2022-05-01,2027-10-01,Active
+CUST029,Indigo Cloud 029,Enterprise,Central,Manufacturing,Portfolio Owner 11,2023-06-01,2028-11-01,Active
+CUST030,Kinetic Cloud 030,Enterprise,West,Business Services,Portfolio Owner 12,2022-07-01,2026-12-01,Active
+CUST031,Lattice Cloud 031,Enterprise,East,Technology,Portfolio Owner 13,2023-08-01,2027-01-01,Active
+CUST032,Mosaic Cloud 032,Enterprise,Central,Healthcare,Portfolio Owner 14,2022-09-01,2028-02-01,Active
+CUST033,Nova Cloud 033,Enterprise,West,Financial Services,Portfolio Owner 15,2023-10-01,2026-03-01,Active
+CUST034,Orchid Cloud 034,Enterprise,East,Manufacturing,Portfolio Owner 16,2022-11-01,2027-04-01,Active
+CUST035,Pioneer Cloud 035,Enterprise,Central,Business Services,Portfolio Owner 17,2023-12-01,2028-05-01,Active
+CUST036,Quartz Cloud 036,Enterprise,West,Technology,Portfolio Owner 18,2022-01-01,2026-06-01,Active
+CUST037,Rivet Cloud 037,Enterprise,East,Healthcare,Portfolio Owner 01,2023-02-01,2027-07-01,Active
+CUST038,Summit Cloud 038,Enterprise,Central,Financial Services,Portfolio Owner 02,2022-03-01,2028-08-01,Active
+CUST039,Tandem Cloud 039,Enterprise,West,Manufacturing,Portfolio Owner 03,2023-04-01,2026-09-01,Active
+CUST040,Vertex Cloud 040,Enterprise,East,Business Services,Portfolio Owner 04,2022-05-01,2027-10-01,Active
+CUST041,Alto Digital 041,Enterprise,Central,Technology,Portfolio Owner 05,2023-06-01,2028-11-01,Active
+CUST042,Beacon Digital 042,Enterprise,West,Healthcare,Portfolio Owner 06,2022-07-01,2026-12-01,Active
+CUST043,Cedar Digital 043,Enterprise,East,Financial Services,Portfolio Owner 07,2023-08-01,2027-01-01,Active
+CUST044,Delta Digital 044,Enterprise,Central,Manufacturing,Portfolio Owner 08,2022-09-01,2028-02-01,Active
+CUST045,Ember Digital 045,Enterprise,West,Business Services,Portfolio Owner 09,2023-10-01,2026-03-01,Active
+CUST046,Foundry Digital 046,Enterprise,East,Technology,Portfolio Owner 10,2022-11-01,2027-04-01,Active
+CUST047,Granite Digital 047,Enterprise,Central,Healthcare,Portfolio Owner 11,2023-12-01,2028-05-01,Active
+CUST048,Helix Digital 048,Enterprise,West,Financial Services,Portfolio Owner 12,2022-01-01,2026-06-01,Active
+CUST049,Indigo Digital 049,Enterprise,East,Manufacturing,Portfolio Owner 13,2023-02-01,2027-07-01,Active
+CUST050,Kinetic Digital 050,Enterprise,Central,Business Services,Portfolio Owner 14,2022-03-01,2028-08-01,Active
+CUST051,Lattice Digital 051,Mid-Market,West,Technology,Portfolio Owner 15,2023-04-01,2026-09-01,Active
+CUST052,Mosaic Digital 052,Mid-Market,East,Healthcare,Portfolio Owner 16,2022-05-01,2027-10-01,Active
+CUST053,Nova Digital 053,Mid-Market,Central,Financial Services,Portfolio Owner 17,2023-06-01,2028-11-01,Active
+CUST054,Orchid Digital 054,Mid-Market,West,Manufacturing,Portfolio Owner 18,2022-07-01,2026-12-01,Active
+CUST055,Pioneer Digital 055,Mid-Market,East,Business Services,Portfolio Owner 01,2023-08-01,2027-01-01,Active
+CUST056,Quartz Digital 056,Mid-Market,Central,Technology,Portfolio Owner 02,2022-09-01,2028-02-01,Active
+CUST057,Rivet Digital 057,Mid-Market,West,Healthcare,Portfolio Owner 03,2023-10-01,2026-03-01,Active
+CUST058,Summit Digital 058,Mid-Market,East,Financial Services,Portfolio Owner 04,2022-11-01,2027-04-01,Active
+CUST059,Tandem Digital 059,Mid-Market,Central,Manufacturing,Portfolio Owner 05,2023-12-01,2028-05-01,Active
+CUST060,Vertex Digital 060,Mid-Market,West,Business Services,Portfolio Owner 06,2022-01-01,2026-06-01,Active
+CUST061,Alto Dynamics 061,Mid-Market,East,Technology,Portfolio Owner 07,2023-02-01,2027-07-01,Active
+CUST062,Beacon Dynamics 062,Mid-Market,Central,Healthcare,Portfolio Owner 08,2022-03-01,2028-08-01,Active
+CUST063,Cedar Dynamics 063,Mid-Market,West,Financial Services,Portfolio Owner 09,2023-04-01,2026-09-01,Active
+CUST064,Delta Dynamics 064,Mid-Market,East,Manufacturing,Portfolio Owner 10,2022-05-01,2027-10-01,Active
+CUST065,Ember Dynamics 065,Mid-Market,Central,Business Services,Portfolio Owner 11,2023-06-01,2028-11-01,Active
+CUST066,Foundry Dynamics 066,Mid-Market,West,Technology,Portfolio Owner 12,2022-07-01,2026-12-01,Active
+CUST067,Granite Dynamics 067,Mid-Market,East,Healthcare,Portfolio Owner 13,2023-08-01,2027-01-01,Active
+CUST068,Helix Dynamics 068,Mid-Market,Central,Financial Services,Portfolio Owner 14,2022-09-01,2028-02-01,Active
+CUST069,Indigo Dynamics 069,Mid-Market,West,Manufacturing,Portfolio Owner 15,2023-10-01,2026-03-01,Active
+CUST070,Kinetic Dynamics 070,Mid-Market,East,Business Services,Portfolio Owner 16,2022-11-01,2027-04-01,Active
+CUST071,Lattice Dynamics 071,Mid-Market,Central,Technology,Portfolio Owner 17,2023-12-01,2028-05-01,Active
+CUST072,Mosaic Dynamics 072,Mid-Market,West,Healthcare,Portfolio Owner 18,2022-01-01,2026-06-01,Active
+CUST073,Nova Dynamics 073,Mid-Market,East,Financial Services,Portfolio Owner 01,2023-02-01,2027-07-01,Active
+CUST074,Orchid Dynamics 074,Mid-Market,Central,Manufacturing,Portfolio Owner 02,2022-03-01,2028-08-01,Active
+CUST075,Pioneer Dynamics 075,Mid-Market,West,Business Services,Portfolio Owner 03,2023-04-01,2026-09-01,Active
+CUST076,Quartz Dynamics 076,Mid-Market,East,Technology,Portfolio Owner 04,2022-05-01,2027-10-01,Active
+CUST077,Rivet Dynamics 077,Mid-Market,Central,Healthcare,Portfolio Owner 05,2023-06-01,2028-11-01,Active
+CUST078,Summit Dynamics 078,Mid-Market,West,Financial Services,Portfolio Owner 06,2022-07-01,2026-12-01,Active
+CUST079,Tandem Dynamics 079,Mid-Market,East,Manufacturing,Portfolio Owner 07,2023-08-01,2027-01-01,Active
+CUST080,Vertex Dynamics 080,Mid-Market,Central,Business Services,Portfolio Owner 08,2022-09-01,2028-02-01,Active
+CUST081,Alto Industries 081,Mid-Market,West,Technology,Portfolio Owner 09,2023-10-01,2026-03-01,Active
+CUST082,Beacon Industries 082,Mid-Market,East,Healthcare,Portfolio Owner 10,2022-11-01,2027-04-01,Active
+CUST083,Cedar Industries 083,Mid-Market,Central,Financial Services,Portfolio Owner 11,2023-12-01,2028-05-01,Active
+CUST084,Delta Industries 084,Mid-Market,West,Manufacturing,Portfolio Owner 12,2022-01-01,2026-06-01,Active
+CUST085,Ember Industries 085,Mid-Market,East,Business Services,Portfolio Owner 13,2023-02-01,2027-07-01,Active
+CUST086,Foundry Industries 086,Mid-Market,Central,Technology,Portfolio Owner 14,2022-03-01,2028-08-01,Active
+CUST087,Granite Industries 087,Mid-Market,West,Healthcare,Portfolio Owner 15,2023-04-01,2026-09-01,Active
+CUST088,Helix Industries 088,Mid-Market,East,Financial Services,Portfolio Owner 16,2022-05-01,2027-10-01,Active
+CUST089,Indigo Industries 089,Mid-Market,Central,Manufacturing,Portfolio Owner 17,2023-06-01,2028-11-01,Active
+CUST090,Kinetic Industries 090,Mid-Market,West,Business Services,Portfolio Owner 18,2022-07-01,2026-12-01,Active
+CUST091,Lattice Industries 091,Mid-Market,East,Technology,Portfolio Owner 01,2023-08-01,2027-01-01,Active
+CUST092,Mosaic Industries 092,Mid-Market,Central,Healthcare,Portfolio Owner 02,2022-09-01,2028-02-01,Active
+CUST093,Nova Industries 093,Mid-Market,West,Financial Services,Portfolio Owner 03,2023-10-01,2026-03-01,Active
+CUST094,Orchid Industries 094,Mid-Market,East,Manufacturing,Portfolio Owner 04,2022-11-01,2027-04-01,Active
+CUST095,Pioneer Industries 095,Mid-Market,Central,Business Services,Portfolio Owner 05,2023-12-01,2028-05-01,Active
+CUST096,Quartz Industries 096,Mid-Market,West,Technology,Portfolio Owner 06,2022-01-01,2026-06-01,Active
+CUST097,Rivet Industries 097,Mid-Market,East,Healthcare,Portfolio Owner 07,2023-02-01,2027-07-01,Active
+CUST098,Summit Industries 098,Mid-Market,Central,Financial Services,Portfolio Owner 08,2022-03-01,2028-08-01,Active
+CUST099,Tandem Industries 099,Mid-Market,West,Manufacturing,Portfolio Owner 09,2023-04-01,2026-09-01,Active
+CUST100,Vertex Industries 100,Mid-Market,East,Business Services,Portfolio Owner 10,2022-05-01,2027-10-01,Active
+CUST101,Alto Labs 101,Mid-Market,Central,Technology,Portfolio Owner 11,2023-06-01,2028-11-01,Active
+CUST102,Beacon Labs 102,Mid-Market,West,Healthcare,Portfolio Owner 12,2022-07-01,2026-12-01,Active
+CUST103,Cedar Labs 103,Mid-Market,East,Financial Services,Portfolio Owner 13,2023-08-01,2027-01-01,Active
+CUST104,Delta Labs 104,Mid-Market,Central,Manufacturing,Portfolio Owner 14,2022-09-01,2028-02-01,Active
+CUST105,Ember Labs 105,Mid-Market,West,Business Services,Portfolio Owner 15,2023-10-01,2026-03-01,Active
+CUST106,Foundry Labs 106,Mid-Market,East,Technology,Portfolio Owner 16,2022-11-01,2027-04-01,Active
+CUST107,Granite Labs 107,Mid-Market,Central,Healthcare,Portfolio Owner 17,2023-12-01,2028-05-01,Active
+CUST108,Helix Labs 108,Mid-Market,West,Financial Services,Portfolio Owner 18,2022-01-01,2026-06-01,Active
+CUST109,Indigo Labs 109,Mid-Market,East,Manufacturing,Portfolio Owner 01,2023-02-01,2027-07-01,Active
+CUST110,Kinetic Labs 110,Mid-Market,Central,Business Services,Portfolio Owner 02,2022-03-01,2028-08-01,Active
+CUST111,Lattice Labs 111,SMB,West,Technology,Portfolio Owner 03,2023-04-01,2026-09-01,Active
+CUST112,Mosaic Labs 112,SMB,East,Healthcare,Portfolio Owner 04,2022-05-01,2027-10-01,Active
+CUST113,Nova Labs 113,SMB,Central,Financial Services,Portfolio Owner 05,2023-06-01,2028-11-01,Active
+CUST114,Orchid Labs 114,SMB,West,Manufacturing,Portfolio Owner 06,2022-07-01,2026-12-01,Active
+CUST115,Pioneer Labs 115,SMB,East,Business Services,Portfolio Owner 07,2023-08-01,2027-01-01,Active
+CUST116,Quartz Labs 116,SMB,Central,Technology,Portfolio Owner 08,2022-09-01,2028-02-01,Active
+CUST117,Rivet Labs 117,SMB,West,Healthcare,Portfolio Owner 09,2023-10-01,2026-03-01,Active
+CUST118,Summit Labs 118,SMB,East,Financial Services,Portfolio Owner 10,2022-11-01,2027-04-01,Active
+CUST119,Tandem Labs 119,SMB,Central,Manufacturing,Portfolio Owner 11,2023-12-01,2028-05-01,Active
+CUST120,Vertex Labs 120,SMB,West,Business Services,Portfolio Owner 12,2022-01-01,2026-06-01,Active
+CUST121,Alto Networks 121,SMB,East,Technology,Portfolio Owner 13,2023-02-01,2027-07-01,Active
+CUST122,Beacon Networks 122,SMB,Central,Healthcare,Portfolio Owner 14,2022-03-01,2028-08-01,Active
+CUST123,Cedar Networks 123,SMB,West,Financial Services,Portfolio Owner 15,2023-04-01,2026-09-01,Active
+CUST124,Delta Networks 124,SMB,East,Manufacturing,Portfolio Owner 16,2022-05-01,2027-10-01,Active
+CUST125,Ember Networks 125,SMB,Central,Business Services,Portfolio Owner 17,2023-06-01,2028-11-01,Active
+CUST126,Foundry Networks 126,SMB,West,Technology,Portfolio Owner 18,2022-07-01,2026-12-01,Active
+CUST127,Granite Networks 127,SMB,East,Healthcare,Portfolio Owner 01,2023-08-01,2027-01-01,Active
+CUST128,Helix Networks 128,SMB,Central,Financial Services,Portfolio Owner 02,2022-09-01,2028-02-01,Active
+CUST129,Indigo Networks 129,SMB,West,Manufacturing,Portfolio Owner 03,2023-10-01,2026-03-01,Active
+CUST130,Kinetic Networks 130,SMB,East,Business Services,Portfolio Owner 04,2022-11-01,2027-04-01,Active
+CUST131,Lattice Networks 131,SMB,Central,Technology,Portfolio Owner 05,2023-12-01,2028-05-01,Active
+CUST132,Mosaic Networks 132,SMB,West,Healthcare,Portfolio Owner 06,2022-01-01,2026-06-01,Active
+CUST133,Nova Networks 133,SMB,East,Financial Services,Portfolio Owner 07,2023-02-01,2027-07-01,Active
+CUST134,Orchid Networks 134,SMB,Central,Manufacturing,Portfolio Owner 08,2022-03-01,2028-08-01,Active
+CUST135,Pioneer Networks 135,SMB,West,Business Services,Portfolio Owner 09,2023-04-01,2026-09-01,Active
+CUST136,Quartz Networks 136,SMB,East,Technology,Portfolio Owner 10,2022-05-01,2027-10-01,Active
+CUST137,Rivet Networks 137,SMB,Central,Healthcare,Portfolio Owner 11,2023-06-01,2028-11-01,Active
+CUST138,Summit Networks 138,SMB,West,Financial Services,Portfolio Owner 12,2022-07-01,2026-12-01,Active
+CUST139,Tandem Networks 139,SMB,East,Manufacturing,Portfolio Owner 13,2023-08-01,2027-01-01,Active
+CUST140,Vertex Networks 140,SMB,Central,Business Services,Portfolio Owner 14,2022-09-01,2028-02-01,Active
+CUST141,Alto Operations 141,SMB,West,Technology,Portfolio Owner 15,2023-10-01,2026-03-01,Active
+CUST142,Beacon Operations 142,SMB,East,Healthcare,Portfolio Owner 16,2022-11-01,2027-04-01,Active
+CUST143,Cedar Operations 143,SMB,Central,Financial Services,Portfolio Owner 17,2023-12-01,2028-05-01,Active
+CUST144,Delta Operations 144,SMB,West,Manufacturing,Portfolio Owner 18,2022-01-01,2026-06-01,Active
+CUST145,Ember Operations 145,SMB,East,Business Services,Portfolio Owner 01,2023-02-01,2027-07-01,Inactive
+CUST146,Foundry Operations 146,SMB,Central,Technology,Portfolio Owner 02,2022-03-01,2028-08-01,Inactive
+CUST147,Granite Operations 147,SMB,West,Healthcare,Portfolio Owner 03,2023-04-01,2026-09-01,Churned
+CUST148,Helix Operations 148,SMB,East,Financial Services,Portfolio Owner 04,2022-05-01,2027-10-01,Inactive
+CUST149,Indigo Operations 149,SMB,Central,Manufacturing,Portfolio Owner 05,2023-06-01,2028-11-01,Inactive
+CUST150,Kinetic Operations 150,SMB,West,Business Services,Portfolio Owner 06,2022-07-01,2026-12-01,Churned

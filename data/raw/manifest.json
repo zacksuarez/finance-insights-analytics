@@ -1,0 +1,26 @@
+{
+  "designated_story_entities": {
+    "forecast_accuracy_region": "West",
+    "profitability_customer_id": "CUST001",
+    "structural_opex_account": "Software",
+    "structural_opex_department": "Engineering"
+  },
+  "period_end": "2025-12",
+  "period_start": "2024-01",
+  "row_counts": {
+    "crm_customers.csv": 150,
+    "epm_plan.csv": 56976,
+    "erp_transactions.csv": 28488,
+    "operational_kpis.csv": 3576,
+    "sales_pipeline.csv": 768
+  },
+  "seed": 20260930,
+  "sha256": {
+    "crm_customers.csv": "29d2abb470014ee35e7b11da3b1eeffd2a6a9b11a66e90af6f1e801768a2260b",
+    "epm_plan.csv": "eb6c72360e509e3eb7022d60c35f976569c1377abb9a64c2f57c4ece8cc1ae39",
+    "erp_transactions.csv": "f1eda38b1e82b1b3ee562643325409154dfcc11340e9edfb7759b814164bbb9b",
+    "operational_kpis.csv": "57be66d3ab9aebe703a4fec46346d74215c0a28162b9e97bffef120700bc4666",
+    "sales_pipeline.csv": "1c99f7160f4b5a71e4462a4044f19023a82f82d711b84a61c60cbb26ee07130f"
+  },
+  "source_systems": 5
+}
