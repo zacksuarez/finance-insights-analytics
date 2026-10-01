@@ -10,4 +10,4 @@ SELECT *,
        revenue - prior_year_revenue AS revenue_growth,
        CASE WHEN prior_year_revenue = 0 THEN NULL ELSE revenue / prior_year_revenue - 1 END AS revenue_growth_pct
 FROM compared
-ORDER BY year, revenue_growth DESC NULLS LAST;
+ORDER BY year, revenue_growth DESC NULLS LAST, customer_id;

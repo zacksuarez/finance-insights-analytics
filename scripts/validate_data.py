@@ -15,7 +15,12 @@ def validate(database_path: Path) -> None:
     connection = duckdb.connect(str(database_path.resolve()), read_only=True)
     try:
         checks = connection.execute(
-            "SELECT check_name, failure_count FROM dq_results ORDER BY check_name"
+            """
+            SELECT 'V1' AS control_layer, check_name, failure_count FROM dq_results
+            UNION ALL
+            SELECT 'V2', check_name, failure_count FROM dq_v2_results
+            ORDER BY control_layer, check_name
+            """
         ).fetchall()
         reconciliation = connection.execute(
             "SELECT measure, source_total, fact_total, mart_total FROM mart_reconciliation ORDER BY measure"
@@ -23,13 +28,13 @@ def validate(database_path: Path) -> None:
     finally:
         connection.close()
 
-    for name, failures in checks:
-        print(f"{'PASS' if failures == 0 else 'FAIL'}  {name}: {failures}")
+    for layer, name, failures in checks:
+        print(f"{'PASS' if failures == 0 else 'FAIL'}  {layer} {name}: {failures}")
     print("\nReconciliation")
     for measure, source, fact, mart in reconciliation:
         print(f"{measure:8} source={source:.2f} fact={fact:.2f} mart={mart:.2f}")
 
-    failed = [(name, failures) for name, failures in checks if failures]
+    failed = [(layer, name, failures) for layer, name, failures in checks if failures]
     if failed:
         raise SystemExit(f"Validation failed: {failed}")
 

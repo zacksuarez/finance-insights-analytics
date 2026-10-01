@@ -1,6 +1,6 @@
 # Finance Insights & Analytics
 
-Finance Insights & Analytics is a portable FP&A data foundation that unifies fictional ERP, CRM, EPM, sales-pipeline, and operational data into a trusted analytical model. V1 focuses on reproducible finance data, dimensional modeling, substantive SQL analysis, and auditable reconciliation without AI or cloud dependencies.
+Finance Insights & Analytics is a portable FP&A platform that unifies fictional ERP, CRM, EPM, sales-pipeline, and operational data into trusted, decision-ready analytics. V1 establishes the reproducible data foundation; V2 adds deterministic executive metrics, management issues, scenarios, and a professional Power BI/Excel semantic-model specification without AI or cloud dependencies.
 
 ## Business Problem
 
@@ -28,7 +28,10 @@ Fictional source-system exports
        Reusable SQL analysis + CSV materializations
                          |
                          v
-              Power BI / Excel-ready layer
+       Executive marts + deterministic issues
+                         |
+                         v
+          Power BI / Excel semantic foundation
 ```
 
 Raw exports in `data/raw/` intentionally retain source-system differences. Curated data in `data/curated/` is modeled separately and never replaces the source evidence.
@@ -100,20 +103,44 @@ Automated tests also verify reproducibility, source volumes, dimensional integri
 
 The conformed dimensions and facts map directly to a Power BI semantic model using one-to-many relationships. Curated marts can be imported into Power BI, queried from Excel through DuckDB-compatible tooling, or exported as CSV for standard Excel workflows. Surrogate keys support stable relationships, while business keys preserve source traceability.
 
-V1 does not include a `.pbix` file or report layer. That work belongs to V2.
+V2 includes a semantic-model specification, representative DAX measures, a four-page executive report design, and an Excel consumption guide. It does not include or claim a physically deployed `.pbix` file.
+
+## V2 — Executive Analytics
+
+V2 turns the trusted V1 model into a management decision layer while preserving all source, fact, reconciliation, and business-story controls.
+
+- **Executive KPIs:** Monthly revenue, growth, plan variance, margin, operating contribution, concentration, forecast accuracy, and pipeline coverage.
+- **Customer profitability:** Revenue and gross-profit growth, margin movement, concentration, ranking, trend, and deterministic portfolio segments.
+- **Margin analytics:** Product, region, and customer-segment mix/margin bridge. This is not represented as full PVM.
+- **Forecast accuracy:** Absolute error, percentage error, MAPE, bias, and rolling 3/6-month views at company, region, and department/account levels.
+- **Pipeline:** Gross and weighted pipeline, stage mix, growth, expected-close timing, and coverage against forecast revenue.
+- **OpEx management:** Actual/Budget/Forecast variance, rolling and YTD variance, and persistence-based structural/timing classification.
+- **Management issues:** Threshold-backed issue register with entity, metric, severity, supporting evidence, and status.
+- **Scenarios:** Explicit Base/Upside/Downside assumptions applied to the latest full-year baseline.
+- **Consumption:** Selective V2 tables materialized as CSV and compressed Parquet for Power BI, Excel, and future governed analytics.
+
+The deterministic [management insight pack](outputs/management-insight-pack.md) summarizes trusted V2 outputs with templates only. It does not speculate about unsupported causes.
+
+Supporting specifications:
+
+- [Management rules and scenario assumptions](docs/management-rules.md)
+- [Power BI semantic model](docs/power-bi-semantic-model.md)
+- [Power BI measures](docs/power-bi-measures.md)
+- [Power BI page design](docs/power-bi-page-design.md)
+- [Excel consumption](docs/excel-consumption.md)
 
 ## Microsoft Portability
 
-| Local V1 component | Microsoft destination |
+| Local component | Microsoft destination |
 | --- | --- |
+| Python source generation and output scripts | Fabric notebooks or Fabric Data Factory/Pipelines |
+| CSV and compressed Parquet | OneLake or ADLS |
 | DuckDB | Fabric Warehouse, Fabric Lakehouse SQL endpoint, or Azure SQL |
-| CSV and DuckDB-local analytical data | OneLake or ADLS |
-| Python generation | Fabric notebook or Azure-hosted Python pipeline |
-| SQL transformations | Fabric SQL, notebooks, or data pipelines |
+| SQL transformations and executive marts | Fabric SQL, notebooks, or pipelines |
 | Curated star schema | Power BI semantic model |
-| Materialized analysis CSVs | Power BI or Excel consumption layer |
+| Executive outputs and issue register | Power BI, Excel, and Microsoft 365 consumption |
 
-This mapping is architectural guidance only; V1 does not provision or require Microsoft cloud services.
+This mapping is architectural guidance only; V2 does not provision or require Microsoft cloud services.
 
 ## How to Run
 
@@ -127,6 +154,8 @@ python scripts/generate_data.py
 python scripts/build_model.py
 python scripts/validate_data.py
 python scripts/run_analyses.py
+python scripts/build_v2_outputs.py
+python scripts/generate_insight_pack.py
 python -m unittest discover -s tests -v
 ```
 
@@ -135,10 +164,10 @@ Run the commands from the repository root. Re-running generation with the same s
 ## Project Roadmap
 
 - V1 — Data foundation & analytical model — COMPLETE
-- V2 — Executive analytics & Power BI
+- V2 — Executive analytics & Power BI readiness — COMPLETE
 - V3 — AI-assisted insight generation
 
-V1 contains no AI, OpenAI integration, RAG, agents, Power BI artifacts, cloud infrastructure, or confidential data.
+V2 contains no AI, OpenAI integration, RAG, agents, fabricated Power BI files, cloud infrastructure, or confidential data.
 
 ## Portfolio Purpose
 

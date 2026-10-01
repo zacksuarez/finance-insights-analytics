@@ -1,0 +1,68 @@
+issue_id,period,issue_type,entity_type,entity_name,metric,actual_value,threshold,severity,supporting_metric,status
+ISS-MARGIN-202501,2025-01,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-718.4068040498892,-200.00,High,Revenue YoY 19.3%,Open
+ISS-MARGIN-202502,2025-02,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-723.8016248017509,-200.00,High,Revenue YoY 19.0%,Open
+ISS-MARGIN-202503,2025-03,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-724.2413499236611,-200.00,High,Revenue YoY 18.1%,Open
+ISS-MARGIN-202504,2025-04,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-722.901231448756,-200.00,High,Revenue YoY 19.3%,Open
+ISS-MARGIN-202505,2025-05,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-720.0244142022805,-200.00,High,Revenue YoY 19.0%,Open
+ISS-MARGIN-202506,2025-06,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-728.9869786096937,-200.00,High,Revenue YoY 18.9%,Open
+ISS-MARGIN-202507,2025-07,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-718.0292259198795,-200.00,High,Revenue YoY 19.2%,Open
+ISS-MARGIN-202508,2025-08,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-721.9039573593644,-200.00,High,Revenue YoY 17.9%,Open
+ISS-MARGIN-202509,2025-09,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-725.2747997294184,-200.00,High,Revenue YoY 15.8%,Open
+ISS-MARGIN-202510,2025-10,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-719.1731505211318,-200.00,High,Revenue YoY 10.8%,Open
+ISS-MARGIN-202511,2025-11,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-721.2203740988055,-200.00,High,Revenue YoY 7.4%,Open
+ISS-MARGIN-202512,2025-12,Margin Deterioration,Company,Company Total,Gross Margin YoY Change (bps),-721.9512677570983,-200.00,High,Revenue YoY 4.6%,Open
+ISS-FORECAST-202507-WEST,2025-07,Forecast Accuracy Deterioration,Region,West,Forecast Accuracy,0.8486361492969051,0.85,Medium,Bias -15.1%,Open
+ISS-FORECAST-202508-WEST,2025-08,Forecast Accuracy Deterioration,Region,West,Forecast Accuracy,0.8315118753477693,0.85,Medium,Bias -16.8%,Open
+ISS-FORECAST-202509-WEST,2025-09,Forecast Accuracy Deterioration,Region,West,Forecast Accuracy,0.8151051748740149,0.85,Medium,Bias -18.5%,Open
+ISS-FORECAST-202510-WEST,2025-10,Forecast Accuracy Deterioration,Region,West,Forecast Accuracy,0.799487283043925,0.85,Medium,Bias -20.1%,Open
+ISS-FORECAST-202511-WEST,2025-11,Forecast Accuracy Deterioration,Region,West,Forecast Accuracy,0.784402777172493,0.85,Medium,Bias -21.6%,Open
+ISS-FORECAST-202512-WEST,2025-12,Forecast Accuracy Deterioration,Region,West,Forecast Accuracy,0.7699305458849507,0.85,Medium,Bias -23.0%,Open
+ISS-PIPELINE-202509,2025-09,Pipeline Coverage Weakness,Company,Company Total,Weighted Pipeline Coverage,0.7361319307176384,0.75,Medium,Weighted pipeline 7708906,Open
+ISS-PIPELINE-202510,2025-10,Pipeline Coverage Weakness,Company,Company Total,Weighted Pipeline Coverage,0.6745998760994049,0.75,Medium,Weighted pipeline 6807807,Open
+ISS-PIPELINE-202511,2025-11,Pipeline Coverage Weakness,Company,Company Total,Weighted Pipeline Coverage,0.6182696958106334,0.75,Medium,Weighted pipeline 6134771,Open
+ISS-PIPELINE-202512,2025-12,Pipeline Coverage Weakness,Company,Company Total,Weighted Pipeline Coverage,0.5976696510368326,0.75,High,Weighted pipeline 5915938,Open
+ISS-OPEX-202501-ENGINEERING-SOFTWARE,2025-01,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-40569.01,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202502-ENGINEERING-SOFTWARE,2025-02,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-40511.57,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202503-ENGINEERING-SOFTWARE,2025-03,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-43035.0,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202504-ENGINEERING-SOFTWARE,2025-04,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-41551.27,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202505-ENGINEERING-SOFTWARE,2025-05,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-42260.1,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202506-ENGINEERING-SOFTWARE,2025-06,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-41069.63,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202507-ENGINEERING-SOFTWARE,2025-07,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-42173.93,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202508-ENGINEERING-SOFTWARE,2025-08,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-43121.1,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202509-ENGINEERING-SOFTWARE,2025-09,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-42524.44,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202510-ENGINEERING-SOFTWARE,2025-10,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-40999.86,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202511-ENGINEERING-SOFTWARE,2025-11,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-41994.75,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202512-ENGINEERING-SOFTWARE,2025-12,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-42544.94,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202404-ENGINEERING-SOFTWARE,2024-04,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-41924.28,-10000.00,High,4 material months in trailing 6,Open
+ISS-OPEX-202405-ENGINEERING-SOFTWARE,2024-05,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-39410.4,-10000.00,High,5 material months in trailing 6,Open
+ISS-OPEX-202406-ENGINEERING-SOFTWARE,2024-06,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-39833.55,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202407-ENGINEERING-SOFTWARE,2024-07,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-41830.25,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202408-ENGINEERING-SOFTWARE,2024-08,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-39337.8,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202409-ENGINEERING-SOFTWARE,2024-09,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-41677.61,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202410-ENGINEERING-SOFTWARE,2024-10,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-40888.15,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202411-ENGINEERING-SOFTWARE,2024-11,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-40648.96,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202412-ENGINEERING-SOFTWARE,2024-12,Structural OpEx Overrun,Department / Account,Engineering / Software,Forecast Variance,-42371.76,-10000.00,High,6 material months in trailing 6,Open
+ISS-OPEX-202509-SALES-PAYROLL,2025-09,Structural OpEx Overrun,Department / Account,Sales / Payroll,Forecast Variance,-17124.58,-10000.00,Medium,4 material months in trailing 6,Open
+ISS-CUSTOMER-2025-CUST001,2025-12,Customer Profitability Deterioration,Customer,Northstar Systems,Gross Margin Change (bps),-1572.656863585813,-500.00,High,Revenue rank 1,Open
+ISS-CUSTOMER-2025-CUST005,2025-12,Customer Profitability Deterioration,Customer,Meridian Forge Labs,Gross Margin Change (bps),-625.7093720185602,-500.00,Medium,Revenue rank 2,Open
+ISS-CUSTOMER-2025-CUST003,2025-12,Customer Profitability Deterioration,Customer,Cobalt Harbor Group,Gross Margin Change (bps),-627.7816959432547,-500.00,Medium,Revenue rank 3,Open
+ISS-CUSTOMER-2025-CUST004,2025-12,Customer Profitability Deterioration,Customer,Juniper Peak Networks,Gross Margin Change (bps),-629.0335115376633,-500.00,Medium,Revenue rank 4,Open
+ISS-CUSTOMER-2025-CUST002,2025-12,Customer Profitability Deterioration,Customer,Aster Ridge Technologies,Gross Margin Change (bps),-627.3322672275439,-500.00,Medium,Revenue rank 5,Open
+ISS-CUSTOMER-2025-CUST048,2025-12,Customer Profitability Deterioration,Customer,Helix Digital 048,Gross Margin Change (bps),-624.0358122303713,-500.00,Medium,Revenue rank 6,Open
+ISS-CUSTOMER-2025-CUST029,2025-12,Customer Profitability Deterioration,Customer,Indigo Cloud 029,Gross Margin Change (bps),-634.1748058311314,-500.00,Medium,Revenue rank 7,Open
+ISS-CUSTOMER-2025-CUST009,2025-12,Customer Profitability Deterioration,Customer,Evercrest Health Tech,Gross Margin Change (bps),-619.9635868108788,-500.00,Medium,Revenue rank 8,Open
+ISS-CUSTOMER-2025-CUST028,2025-12,Customer Profitability Deterioration,Customer,Helix Cloud 028,Gross Margin Change (bps),-616.9933706709618,-500.00,Medium,Revenue rank 10,Open
+ISS-CUSTOMER-2025-CUST049,2025-12,Customer Profitability Deterioration,Customer,Indigo Digital 049,Gross Margin Change (bps),-634.0161489912999,-500.00,Medium,Revenue rank 9,Open
+ISS-CONCENTRATION-202406,2024-06,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.25022862599745094,0.25,Medium,HHI 154.0,Monitor
+ISS-CONCENTRATION-202501,2025-01,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2591599797044844,0.25,Medium,HHI 171.0,Monitor
+ISS-CONCENTRATION-202502,2025-02,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2561059136574386,0.25,Medium,HHI 167.0,Monitor
+ISS-CONCENTRATION-202503,2025-03,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2583879795003691,0.25,Medium,HHI 169.0,Monitor
+ISS-CONCENTRATION-202504,2025-04,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2592063153610598,0.25,Medium,HHI 168.0,Monitor
+ISS-CONCENTRATION-202505,2025-05,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2596643386184911,0.25,Medium,HHI 170.0,Monitor
+ISS-CONCENTRATION-202506,2025-06,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2629157618115582,0.25,Medium,HHI 175.0,Monitor
+ISS-CONCENTRATION-202507,2025-07,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2590901781808788,0.25,Medium,HHI 172.0,Monitor
+ISS-CONCENTRATION-202508,2025-08,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2572149137096501,0.25,Medium,HHI 166.0,Monitor
+ISS-CONCENTRATION-202509,2025-09,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2619665018579963,0.25,Medium,HHI 172.0,Monitor
+ISS-CONCENTRATION-202510,2025-10,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.25754875799690746,0.25,Medium,HHI 168.0,Monitor
+ISS-CONCENTRATION-202511,2025-11,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.2581161837323346,0.25,Medium,HHI 168.0,Monitor
+ISS-CONCENTRATION-202512,2025-12,Customer Concentration Risk,Company,Company Total,Top 10 Customer Revenue Share,0.25822631473200386,0.25,Medium,HHI 171.0,Monitor

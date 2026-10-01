@@ -14,7 +14,10 @@ SQL_SEQUENCE = (
     "sql/marts/10_dimensions.sql",
     "sql/marts/20_facts.sql",
     "sql/marts/30_finance_marts.sql",
+    "sql/config/management_thresholds.sql",
+    "sql/marts/40_v2_executive_marts.sql",
     "sql/quality/quality_checks.sql",
+    "sql/quality/50_v2_quality_checks.sql",
 )
 
 
@@ -37,7 +40,11 @@ def build_model(raw_dir: Path, database_path: Path) -> dict[str, int]:
             execute_sql_file(connection, PROJECT_ROOT / relative_path, raw_dir)
 
         failures = connection.execute(
-            "SELECT check_name, failure_count FROM dq_results WHERE failure_count <> 0"
+            """
+            SELECT check_name, failure_count FROM dq_results WHERE failure_count <> 0
+            UNION ALL
+            SELECT check_name, failure_count FROM dq_v2_results WHERE failure_count <> 0
+            """
         ).fetchall()
         if failures:
             details = ", ".join(f"{name}={count}" for name, count in failures)
@@ -56,6 +63,16 @@ def build_model(raw_dir: Path, database_path: Path) -> dict[str, int]:
                 "fact_pipeline",
                 "fact_operational_kpi",
                 "mart_finance_monthly",
+                "mart_executive_kpis",
+                "mart_customer_profitability_v2",
+                "mart_customer_concentration_v2",
+                "mart_margin_analysis",
+                "mart_forecast_accuracy_v2",
+                "mart_pipeline_analysis_v2",
+                "mart_opex_management_v2",
+                "mart_regional_performance_v2",
+                "mart_management_issue_register",
+                "mart_scenario_analysis",
             )
         }
         connection.execute("CHECKPOINT")

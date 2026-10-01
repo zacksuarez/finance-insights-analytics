@@ -46,3 +46,20 @@ Power BI or Excel should load the five dimensions and four facts, use one-to-man
 ## Price / Volume / Mix Boundary
 
 V1 does not present a PVM calculation because the simulated sources do not contain a defensible unit quantity, contracted list price, realized unit price, or explicit discount field at invoice-line grain. A valid future PVM model would require those fields plus consistent units of measure and product/customer price effective dates.
+
+## V2 Executive Marts
+
+| Table | Grain | Purpose |
+| --- | --- | --- |
+| `mart_executive_kpis` | One row per month | Company growth, margin, plan variance, concentration, accuracy, and pipeline KPIs |
+| `mart_customer_profitability_v2` | One row per year and customer | Growth, profitability, concentration, ranking, and deterministic segmentation |
+| `mart_customer_concentration_v2` | One row per month | Top 1/5/10 shares and HHI trend |
+| `mart_margin_analysis` | One row per year, bridge dimension, and member | Product, region, and customer-segment mix/margin bridge |
+| `mart_forecast_accuracy_v2` | One row per month and company/region/department-account entity | Error, MAPE, bias, and rolling accuracy |
+| `mart_pipeline_analysis_v2` | One row per expected-close month, region, and stage | Gross/weighted pipeline, stage mix, growth, and forecast coverage |
+| `mart_opex_management_v2` | One row per month, department, and account | Actual/plan variance, rolling/YTD variance, and persistence classification |
+| `mart_regional_performance_v2` | One row per month and region | Revenue, growth, margin, accuracy, pipeline, customers, and concentration |
+| `mart_management_issue_register` | One row per triggered deterministic issue | Threshold-backed management prioritization |
+| `mart_scenario_analysis` | One row per scenario | Base/Upside/Downside what-if outputs |
+
+Thresholds and scenario assumptions live in configuration tables rather than being repeated across analytical queries. The rule catalog is documented in [management-rules.md](management-rules.md).
