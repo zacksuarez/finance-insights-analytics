@@ -21,6 +21,18 @@ OUTPUTS = {
     "management_issue_register": "mart_management_issue_register",
     "scenario_analysis": "mart_scenario_analysis",
 }
+OUTPUT_ORDER = {
+    "executive_kpis": "period",
+    "customer_profitability": "year, revenue_rank, customer_id",
+    "customer_concentration": "period",
+    "margin_analysis": "year, dimension_type, member_name",
+    "forecast_accuracy": "period, entity_type, entity_name",
+    "pipeline_analysis": "period, region, stage",
+    "opex_management": "period, department_name, account_name",
+    "regional_performance": "period, region",
+    "management_issue_register": "period, issue_id",
+    "scenario_analysis": "display_order",
+}
 
 
 def materialize_v2_outputs(database_path: Path, output_dir: Path) -> dict[str, int]:
@@ -38,7 +50,8 @@ def materialize_v2_outputs(database_path: Path, output_dir: Path) -> dict[str, i
             ):
                 path = (output_dir / f"{output_name}.{extension}").resolve().as_posix().replace("'", "''")
                 connection.execute(
-                    f"COPY (SELECT * FROM {relation_name}) TO '{path}' ({copy_options})"
+                    f"COPY (SELECT * FROM {relation_name} ORDER BY {OUTPUT_ORDER[output_name]}) "
+                    f"TO '{path}' ({copy_options})"
                 )
     finally:
         connection.close()

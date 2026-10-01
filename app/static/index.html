@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finance Insights | Executive Review</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Finance Insights &amp; Analytics</p>
+      <h1>Executive review</h1>
+    </div>
+    <div class="header-actions">
+      <span id="period" class="period"></span>
+      <button id="generate" type="button">Generate AI Executive Insights</button>
+    </div>
+  </header>
+  <main>
+    <section class="trust-band" aria-labelledby="trust-title">
+      <div><p class="section-label">Trust and validation</p><h2 id="trust-title">Loading verified finance context</h2></div>
+      <div id="trust-details" class="trust-details"></div>
+    </section>
+    <section aria-labelledby="kpi-title">
+      <div class="section-heading"><div><p class="section-label">Latest complete period</p><h2 id="kpi-title">Executive KPI snapshot</h2></div></div>
+      <div id="kpis" class="kpi-grid" aria-live="polite"></div>
+    </section>
+    <section aria-labelledby="issues-title">
+      <div class="section-heading">
+        <div><p class="section-label">Deterministic ranking</p><h2 id="issues-title">Priority issue register</h2></div>
+        <span id="issue-count" class="section-meta"></span>
+      </div>
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>Priority</th><th>Issue</th><th>Entity</th><th>Verified metric</th><th>Score</th></tr></thead>
+          <tbody id="issues"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="ai-section" aria-labelledby="ai-title">
+      <div class="section-heading">
+        <div><p class="section-label">Bounded interpretation</p><h2 id="ai-title">AI executive summary</h2></div>
+        <span id="ai-status" class="section-meta">Not generated</span>
+      </div>
+      <div id="ai-empty" class="empty-state">Generate insights to synthesize the verified priority issues. Financial values remain deterministic.</div>
+      <div id="ai-output" class="ai-output" hidden>
+        <p id="executive-summary" class="executive-summary"></p>
+        <div id="top-insights" class="insight-list"></div>
+        <div class="follow-up-grid">
+          <div><h3>Unresolved questions</h3><ul id="questions"></ul></div>
+          <div><h3>Recommended follow-up</h3><ul id="actions"></ul></div>
+        </div>
+      </div>
+      <div id="ai-error" class="error-state" hidden></div>
+    </section>
+    <section aria-labelledby="developer-title">
+      <details><summary id="developer-title">Developer view</summary><pre id="developer"></pre></details>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -34,7 +34,9 @@ def build_model(raw_dir: Path, database_path: Path) -> dict[str, int]:
     if not raw_dir.exists():
         raise FileNotFoundError(f"Raw data directory does not exist: {raw_dir}")
 
-    connection = duckdb.connect(str(database_path))
+    build_path = database_path.with_name(database_path.name + ".building")
+    build_path.unlink(missing_ok=True)
+    connection = duckdb.connect(str(build_path))
     try:
         for relative_path in SQL_SEQUENCE:
             execute_sql_file(connection, PROJECT_ROOT / relative_path, raw_dir)
@@ -76,9 +78,13 @@ def build_model(raw_dir: Path, database_path: Path) -> dict[str, int]:
             )
         }
         connection.execute("CHECKPOINT")
-        return counts
-    finally:
+    except Exception:
         connection.close()
+        build_path.unlink(missing_ok=True)
+        raise
+    connection.close()
+    build_path.replace(database_path)
+    return counts
 
 
 def main() -> None:

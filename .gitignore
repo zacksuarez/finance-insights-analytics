@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 venv/
 *.duckdb.wal
+*.duckdb.building
+.env
+outputs/ai-executive-insights.md
+outputs/verified-ai-context.json

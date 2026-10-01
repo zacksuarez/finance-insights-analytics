@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import tempfile
 import unittest
 from pathlib import Path
@@ -283,6 +284,16 @@ class V2ExecutiveAnalyticsTests(unittest.TestCase):
         for output_name in OUTPUTS:
             self.assertGreater((self.outputs / f"{output_name}.csv").stat().st_size, 0)
             self.assertGreater((self.outputs / f"{output_name}.parquet").stat().st_size, 0)
+        first_hashes = {
+            path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in self.outputs.iterdir()
+        }
+        materialize_v2_outputs(self.database, self.outputs)
+        second_hashes = {
+            path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in self.outputs.iterdir()
+        }
+        self.assertEqual(first_hashes, second_hashes)
         generate_insight_pack(self.database, self.pack)
         text = self.pack.read_text(encoding="utf-8")
         self.assertIn("## Executive KPI Snapshot", text)

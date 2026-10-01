@@ -1,6 +1,6 @@
 # Finance Insights & Analytics
 
-Finance Insights & Analytics is a portable FP&A platform that unifies fictional ERP, CRM, EPM, sales-pipeline, and operational data into trusted, decision-ready analytics. V1 establishes the reproducible data foundation; V2 adds deterministic executive metrics, management issues, scenarios, and a professional Power BI/Excel semantic-model specification without AI or cloud dependencies.
+Finance Insights & Analytics is a portable FP&A platform that unifies fictional ERP, CRM, EPM, sales-pipeline, and operational data into trusted, decision-ready analytics. V1 establishes the reproducible data foundation, V2 adds deterministic executive analytics, and V3 adds bounded AI-assisted interpretation over verified evidence.
 
 ## Business Problem
 
@@ -31,7 +31,13 @@ Fictional source-system exports
        Executive marts + deterministic issues
                          |
                          v
-          Power BI / Excel semantic foundation
+       Verified evidence + priority package
+                         |
+                         v
+        Structured AI + business guardrails
+                         |
+                         v
+       Executive app / Power BI / Excel path
 ```
 
 Raw exports in `data/raw/` intentionally retain source-system differences. Curated data in `data/curated/` is modeled separately and never replaces the source evidence.
@@ -129,6 +135,26 @@ Supporting specifications:
 - [Power BI page design](docs/power-bi-page-design.md)
 - [Excel consumption](docs/excel-consumption.md)
 
+## V3 — AI-Assisted Executive Insights
+
+V3 adds an interpretation layer without moving financial authority into the model:
+
+- AI receives verified V2 evidence, never raw finance transactions.
+- Deterministic issue detection and transparent prioritization happen before AI.
+- Stable evidence, issue, and entity IDs provide traceability.
+- Pydantic structured outputs enforce a runtime machine contract.
+- Semantic guardrails reject invented references, numeric prose, causal overreach, and priority contradictions.
+- Failed data-quality or reconciliation controls block the provider call.
+- Numeric values displayed beside AI insights are resolved from deterministic evidence after validation.
+- A small provider interface isolates OpenAI and supports later Azure OpenAI or Microsoft Foundry migration.
+- The local executive interface presents KPI context, ranked issues, validated insights, evidence, follow-up questions, trust status, and a developer view.
+
+Architecture and consumption details:
+
+- [V3 AI architecture and guardrails](docs/v3-ai-architecture.md)
+- [Power BI and Excel AI consumption](docs/ai-consumption.md)
+- [Azure AI target architecture](docs/azure-ai-target-architecture.md)
+
 ## Microsoft Portability
 
 | Local component | Microsoft destination |
@@ -140,7 +166,7 @@ Supporting specifications:
 | Curated star schema | Power BI semantic model |
 | Executive outputs and issue register | Power BI, Excel, and Microsoft 365 consumption |
 
-This mapping is architectural guidance only; V2 does not provision or require Microsoft cloud services.
+This mapping is architectural guidance only; V3 does not provision or require Microsoft cloud services.
 
 ## How to Run
 
@@ -156,19 +182,31 @@ python scripts/validate_data.py
 python scripts/run_analyses.py
 python scripts/build_v2_outputs.py
 python scripts/generate_insight_pack.py
+python scripts/build_ai_context.py
+python scripts/evaluate_ai.py
 python -m unittest discover -s tests -v
 ```
 
-Run the commands from the repository root. Re-running generation with the same seed produces byte-identical source CSVs.
+Run the commands from the repository root. Re-running generation with the same seed produces byte-identical source CSVs. V2 exports use explicit grain ordering so repeated CSV and Parquet materializations are also byte-stable; the DuckDB build replaces the prior snapshot only after successful validation.
+
+To use the optional AI provider, configure `OPENAI_API_KEY` as a server-side environment variable. Review `.env.example` for centralized model settings. No normal test or offline evaluation calls the provider.
+
+Run the executive interface locally:
+
+```bash
+python app/server.py
+```
+
+Open `http://127.0.0.1:8000`. Live generation occurs only when the user selects the generation command and a server-side key is configured. The explicit `python scripts/generate_ai_insights.py` command writes a separate validated artifact after one successful call.
 
 ## Project Roadmap
 
 - V1 — Data foundation & analytical model — COMPLETE
 - V2 — Executive analytics & Power BI readiness — COMPLETE
-- V3 — AI-assisted insight generation
+- V3 — AI-assisted executive insights — COMPLETE
 
-V2 contains no AI, OpenAI integration, RAG, agents, fabricated Power BI files, cloud infrastructure, or confidential data.
+Future learning may extend the patterns into financial research/RAG, workflow automation, FP&A agents, or Microsoft/Azure implementation. Those capabilities are not part of this completed project.
 
 ## Portfolio Purpose
 
-This project demonstrates how a modern FP&A or Finance Analytics leader can unify fragmented financial and operational data into a controlled decision-support layer. It emphasizes finance logic, dimensional architecture, reconciliation, analytically meaningful SQL, reproducibility, and technology portability before visualization or AI is introduced.
+This project demonstrates multi-system financial data architecture, dimensional modeling, advanced SQL, FP&A decision support, deterministic issue detection, Power BI semantic design, structured generative AI, evidence grounding, business guardrails, and enterprise portability.
