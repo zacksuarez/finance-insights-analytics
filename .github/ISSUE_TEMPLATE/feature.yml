@@ -1,0 +1,53 @@
+name: Feature or improvement
+description: Define a durable project outcome with acceptance criteria
+title: "[Feature] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Describe the outcome, not only the implementation idea."
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should be true when this work is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Relevant user need, evidence, links, or prior decisions.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Use a checklist with observable pass conditions.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Scope and boundaries
+      description: What is explicitly included and excluded?
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: Data classification
+      options:
+        - Public or synthetic
+        - Private personal
+        - Commercial confidential
+        - Employer or client restricted
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Verification plan
+      description: Automated, manual, visual, or interactive checks required.
