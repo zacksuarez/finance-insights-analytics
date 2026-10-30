@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "name": "finance-insights-analytics",
+  "owner": "zacksuarez",
+  "role": "portfolio-analytics-platform",
+  "status": "active",
+  "visibilityPolicy": "public-synthetic-data-only",
+  "chatgptProjects": [
+    "AI Learning"
+  ],
+  "chatAliases": [
+    "AI Learning Roadmap"
+  ],
+  "validation": {
+    "automated": [
+      "python -m unittest discover -s tests -v"
+    ],
+    "local": [
+      "Run the documented reproducible data and analytics build"
+    ]
+  },
+  "requiresLocalWorkspace": false,
+  "notes": [
+    "All committed business data must remain fictional",
+    "Generated secrets and live-provider outputs must stay ignored"
+  ]
+}
